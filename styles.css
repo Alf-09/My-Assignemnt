@@ -1,0 +1,168 @@
+/* Basic styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and navigation bar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* About Me section */
+#about {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Projects section */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills list */
+#skills {
+    padding: 2rem;
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+#skills li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+}
+
+/* Contact section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    margin-top: 1rem;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav a {
+        padding: 0.5rem;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
